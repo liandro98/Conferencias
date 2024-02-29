@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { LoginComponent } from './componentes/login/login.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -36,6 +37,11 @@ const routes: Routes = [
   }
 
 ];
+=======
+
+const routes: Routes = [];
+
+>>>>>>> 664318c (initial commit)
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

@@ -4,6 +4,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+<<<<<<< HEAD
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrimengModule } from './primeng.module';
 import { LoginComponent } from './componentes/login/login.component';
@@ -35,9 +36,23 @@ import { FooterComponent } from './componentes/footer/footer.component';
  
   providers: [
     MessageService,
+=======
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [
+>>>>>>> 664318c (initial commit)
     provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 664318c (initial commit)

@@ -124,8 +124,11 @@
         }
       }
     }
+<<<<<<< HEAD
   },
   "cli": {
     "analytics": false
+=======
+>>>>>>> 664318c (initial commit)
   }
 }
