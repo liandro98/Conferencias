@@ -3,8 +3,13 @@
 @import "primeng/resources/primeng.css";
 @import "primeflex/primeflex.css";
 @import "primeicons/primeicons.css";
+
 html, body
 {
-    margin:0;
     height: 100%;
+    margin: 0; /* Elimina los márgenes predeterminados del body */
+    padding: 0; /* Elimina el relleno predeterminado del body */
+    background-color: #1a1a1a; /* Establece el color de fondo a negro o gris oscuro */
+    color: #fff; /* Establece el color del texto a blanco (opcional) */
+    font-family: 'Arial', sans-serif; /* Establece la fuente (ajusta según sea necesario) */
 }

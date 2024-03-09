@@ -1,0 +1,13 @@
+  <!-- perfil.component.html -->
+<div class="profile-container">
+  <div class="profile-picture" (click)="toggleProfileInfo()">
+    <img src="assets/imagenes/anne.jfif" alt="Foto de perfil">
+  </div>
+  <div *ngIf="showProfileInfo" class="profile-info">
+    <!-- Información básica del perfil -->
+    <p>Nombre: {{ user.name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <!-- Agrega más campos de información del usuario según sea necesario -->
+    <button (click)="logout()">Cerrar Sesión</button>
+  </div>
+</div>
