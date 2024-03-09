@@ -6,6 +6,7 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { authGuard } from './guards/auth.guard';
+import { RegistroConferenciaComponent } from './componentes/registro-conferencia/registro-conferencia.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
     path:'home',
     component: HomeComponent,
     canActivate:[authGuard]
+  },
+  {
+    path:'registroConferencia',
+    component: RegistroConferenciaComponent
   },
   {
     path:'', 

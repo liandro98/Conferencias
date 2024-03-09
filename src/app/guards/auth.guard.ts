@@ -8,5 +8,8 @@ export const authGuard: CanActivateFn = (route, state) => {
   }else{
     const router = inject(Router);
     return router.navigate(['login']);
+    console.log('sessionStorage no está disponible en este entorno');
   }
 };
+
+export const AuthGuard = authGuard;

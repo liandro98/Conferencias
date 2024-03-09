@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<!-- Contenedor del formulario -->
+<div>
+    <!-- Formulario -->
+    <form>
+        <!-- Tarjeta del formulario -->
+        <p-card [styleClass]="'custom-card'">
+            <ng-template pTemplate="header">
+                <div class="card-header-center">
+                    <h1>Registro de conferencias</h1> 
+                </div>
+            </ng-template>
+            <!-- Primera línea de campos -->
+            <div class="field">
+                <input type="text" pInputText placeholder="Título">
+                <input type="text" pInputText placeholder="Cupo">
+                <p-dropdown [options]="cities"  [(ngModel)]="selectedCity" optionLabel="name" name="selectedCity" [showClear]="true" placeholder="Selecciona un horario"></p-dropdown>
+            </div>
+            <!--Campo de texto de Conferencia-->
+            <div class="flex-row">
+                <textarea id="campo-multilinea" name="mensaje" rows="2" cols="30" placeholder="Descripción Conferencia" pInputTextarea></textarea>
+            </div>
+            <!-- Aquí deben ir las comprobaciones de los campos -->
+            
+            <!-- Segundaa línea de campos -->
+            <div class="field">
+                <input type="text" pInputText placeholder="Nombre del Ponente">
+                <input type="text" pInputText placeholder="Apellido Paterno">
+                <input type="text" pInputText placeholder="Apellido Materno">
+            </div>
+            <!--Campo de texto de datos del expositor-->
+            <div class="flex-row">
+                <textarea id="campo-multilinea" name="mensaje" rows="2" cols="30" placeholder="Descripción Expositor" pInputTextarea></textarea>
+            </div>
+            <!-- Aquí deben ir las comprobaciones de los campos -->
+            
+            <!-- Botones de administración -->
+            <div class="field">
+                <p-button label="Añadir Expositor"></p-button>
+                <p-button label="Guardar" severity="success"></p-button>
+                <p-button label="Eliminar" severity="danger"></p-button>
+            </div>
+        </p-card>
+    </form>
+</div>
+
+<app-footer></app-footer>

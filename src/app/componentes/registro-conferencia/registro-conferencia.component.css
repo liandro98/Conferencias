@@ -1,0 +1,18 @@
+.field {
+    display: flex; /* Usa flexbox para controlar la disposición del contenido */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 10px; /* Espacio inferior entre cada campo */
+}
+
+.card-header-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+:host ::ng-deep .custom-card {
+    background-color: rgb(70, 70, 75);
+}
+
