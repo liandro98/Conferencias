@@ -14,6 +14,11 @@ import { MessageService } from 'primeng/api';
 import { HomeComponent } from './componentes/home/home.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { MenubarModule } from 'primeng/menubar';
+
+import { MenuComponent } from './componentes/menu/menu.component';
+import { PerfilComponent} from './componentes/perfil/perfil.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +27,9 @@ import { FooterComponent } from './componentes/footer/footer.component';
     RegisterComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    PrimengModule
+    PrimengModule,
+    MenubarModule
   ],
  
   providers: [

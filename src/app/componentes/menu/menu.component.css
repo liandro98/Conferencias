@@ -1,0 +1,28 @@
+/* app-menu.component.css */
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(255, 73, 1);
+  color: white;
+  position: fixed; /* Fijar el menú en la parte superior */
+  top: 0; /* Establecer la posición en la parte superior */
+  left: 0;
+  right: 0;
+  width: 100%; /* Abarcar toda la pantalla */
+  z-index: 1000; /* Asegurarse de que esté en la capa superior */
+}
+  
+ /* app-menu.component.css */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 5px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.logo img {
+  height: 50px; /* Ajusta la altura de la imagen según sea necesario */
+  /* Puedes agregar más estilos según tus necesidades */
+}
+  
