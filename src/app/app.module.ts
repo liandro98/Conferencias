@@ -15,7 +15,15 @@ import { MessageService } from 'primeng/api';
 import { HomeComponent } from './componentes/home/home.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+<<<<<<< HEAD
 import { RegistroConferenciaComponent } from './componentes/registro-conferencia/registro-conferencia.component';
+=======
+import { MenubarModule } from 'primeng/menubar';
+
+import { MenuComponent } from './componentes/menu/menu.component';
+import { PerfilComponent} from './componentes/perfil/perfil.component';
+
+>>>>>>> 5e4b82ffd655ddd17906ce4260e5fff9df05e34b
 
 @NgModule({
   declarations: [
@@ -25,7 +33,12 @@ import { RegistroConferenciaComponent } from './componentes/registro-conferencia
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+<<<<<<< HEAD
     RegistroConferenciaComponent
+=======
+    MenuComponent,
+    PerfilComponent
+>>>>>>> 5e4b82ffd655ddd17906ce4260e5fff9df05e34b
   ],
   imports: [
     BrowserModule,
@@ -34,7 +47,11 @@ import { RegistroConferenciaComponent } from './componentes/registro-conferencia
     ReactiveFormsModule,
     HttpClientModule,
     PrimengModule,
+<<<<<<< HEAD
     FormsModule
+=======
+    MenubarModule
+>>>>>>> 5e4b82ffd655ddd17906ce4260e5fff9df05e34b
   ],
  
   providers: [
