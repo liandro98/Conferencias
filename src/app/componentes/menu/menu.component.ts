@@ -12,8 +12,8 @@ export class MenuComponent {
   constructor() {
     this.items = [
       { label: 'Inicio', routerLink: '/home' },
-      { label: 'Conferencias', routerLink: '/conferencias' },
-      { label: 'Registrar Conferencias', routerLink: '/registrar-conferencias' },
+      { label: 'Conferencias', routerLink: '/lista-conferencias' },
+      { label: 'Registrar Conferencias', routerLink: '/registroConferencia' },
       { label: 'Estadisticas', routerLink: '/estadisticas' }
     ];
   }

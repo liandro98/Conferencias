@@ -1,5 +1,6 @@
 // perfil.component.ts
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-perfil',
@@ -7,22 +8,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent {
-  showProfileInfo = false;
+  visible: boolean = false;
+
+  sidebarVisibleR: boolean = false;
 
   user = {
-    name: 'John Doe',
-    email: 'john.doe@example.com',
+    name: 'Anna',
+    email: 'Ana@example.com',
+    // Otros campos del usuario
   };
-
-  toggleProfileInfo() {
-    console.log('Clic en la imagen de perfil');
   
-
-    this.showProfileInfo = !this.showProfileInfo;
+  showDialog() {
+     
+      this.visible = true;
   }
 
   logout() {
     // Lógica para cerrar sesión (puede ser un servicio de autenticación)
     console.log('Cerrando sesión...');
   }
+
+ 
+
+ 
 }

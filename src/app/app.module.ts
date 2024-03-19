@@ -15,15 +15,20 @@ import { MessageService } from 'primeng/api';
 import { HomeComponent } from './componentes/home/home.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-<<<<<<< HEAD
 import { RegistroConferenciaComponent } from './componentes/registro-conferencia/registro-conferencia.component';
-=======
 import { MenubarModule } from 'primeng/menubar';
 
 import { MenuComponent } from './componentes/menu/menu.component';
 import { PerfilComponent} from './componentes/perfil/perfil.component';
-
->>>>>>> 5e4b82ffd655ddd17906ce4260e5fff9df05e34b
+import { ConferenciaComponent } from './componentes/conferencia/conferencia.component';
+import { TabViewModule } from 'primeng/tabview';
+import { DialogModule } from 'primeng/dialog';
+import { SidebarModule } from 'primeng/sidebar';
+import { ListaConferenciasComponent } from './componentes/lista-conferencias/lista-conferencias.component';
+import { TableModule } from 'primeng/table';
+import { ChartModule } from 'primeng/chart';
+import { EstadisticasComponent } from './componentes/estadisticas/estadisticas.component';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @NgModule({
   declarations: [
@@ -33,12 +38,12 @@ import { PerfilComponent} from './componentes/perfil/perfil.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-<<<<<<< HEAD
-    RegistroConferenciaComponent
-=======
+    RegistroConferenciaComponent,
     MenuComponent,
-    PerfilComponent
->>>>>>> 5e4b82ffd655ddd17906ce4260e5fff9df05e34b
+    PerfilComponent,
+    ConferenciaComponent,
+    ListaConferenciasComponent,
+    EstadisticasComponent
   ],
   imports: [
     BrowserModule,
@@ -47,11 +52,14 @@ import { PerfilComponent} from './componentes/perfil/perfil.component';
     ReactiveFormsModule,
     HttpClientModule,
     PrimengModule,
-<<<<<<< HEAD
-    FormsModule
-=======
-    MenubarModule
->>>>>>> 5e4b82ffd655ddd17906ce4260e5fff9df05e34b
+    FormsModule,
+    MenubarModule,
+    TabViewModule,
+    DialogModule,
+    SidebarModule,
+    TableModule,
+    ChartModule,
+    FieldsetModule
   ],
  
   providers: [

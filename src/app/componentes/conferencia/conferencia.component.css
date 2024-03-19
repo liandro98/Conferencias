@@ -1,0 +1,11 @@
+.custom-tab-panel {
+    background-color: orange;
+    color: white;
+  }
+  
+  /* Opcional: para que la tarjeta ocupe 6 columnas */
+  .custom-tab-panel {
+    width: 100%; /* Ajusta según sea necesario para ocupar 6 columnas en tu diseño */
+    
+  }
+  

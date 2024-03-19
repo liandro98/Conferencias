@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background-color: rgb(255, 73, 1);
+  background-color: rgb(0, 0, 0);
   color: white;
   position: fixed; /* Fijar el menú en la parte superior */
   top: 0; /* Establecer la posición en la parte superior */

@@ -6,10 +6,24 @@
 
 html, body
 {
-    height: 100%;
-    margin: 0; /* Elimina los márgenes predeterminados del body */
-    padding: 0; /* Elimina el relleno predeterminado del body */
-    background-color: #1a1a1a; /* Establece el color de fondo a negro o gris oscuro */
-    color: #fff; /* Establece el color del texto a blanco (opcional) */
-    font-family: 'Arial', sans-serif; /* Establece la fuente (ajusta según sea necesario) */
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.titulo
+{
+    font-size: 1.8rem;
+    .solway-regular {
+        font-family: "Solway", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 }

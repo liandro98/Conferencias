@@ -1,0 +1,17 @@
+<div >
+    <app-header></app-header>
+</div>
+
+
+
+<div class="p-grid card-container ">
+    <p-tabView>
+    <p-tabPanel *ngFor="let tab of tabs" [header]="tab.title" class="custom-tab-panel">
+        <p>
+            {{ tab.content }}
+        </p>
+    </p-tabPanel>
+    </p-tabView>
+</div>
+
+

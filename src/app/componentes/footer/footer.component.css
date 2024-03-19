@@ -1,0 +1,29 @@
+.footer {
+    background-color: #00000013;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    
+}
+
+.social-icons li a {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.social-icons li a:hover {
+    color: #007bff;
+}

@@ -1,0 +1,65 @@
+<div >
+    <app-header></app-header>
+</div>
+
+<div class="container mt-6">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+           
+            <p-card header="Listado conferencias" class="text-center" >
+                <div class="d-flex justify-content-between align-items-center">
+                    <span></span>
+                    <p-button label="Nuevo" severity="success" routerLink="/registroConferencia"></p-button>
+                </div>
+                <div class="fiel">
+                    <div class="card">
+                        <p-table  styleClass="p-datatable-striped" [tableStyle]="{'min-width': '70rem'}">
+                            <ng-template pTemplate="right">
+                                <i class="pi pi-pencil" style="font-size: 1.1rem; color: green"></i>
+                                <i class="pi pi-trash" style="font-size: 1.1rem; color: red"></i>
+                                <p-button label="Nuevo " severity="success float-end"></p-button>
+                            </ng-template>
+                            
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th>Titulo</th>
+                                    <th>Descripcion</th>
+                                    <th>Ponente</th>
+                                    <th>Lugar</th>
+                                    <th>Fecha</th>
+                                    <th>Hora</th>
+                                    <th>Cupo</th>
+                                    <th></th>
+
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="body" let-product>
+                                <tr>
+                                    <td>Conferenica1</td>
+                                    <td>Descripcion Conferenica1</td>
+                                    <td>Ponente 1</td>
+                                    <td>Sala1</td>
+                                    <td>25/03/2024</td>
+                                    <td>17 horas</td>
+                                    <td>10</td>
+                                    <td>
+                                        <i class="pi pi-pencil" style="font-size: 1.1rem; color: green"></i>
+                                        <i class="pi pi-trash" style="font-size: 1.1rem; color: red"></i>
+                                    </td>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </div>
+                </div>
+
+
+
+            </p-card>
+        </div>
+    </div>
+</div>
+
+
+<div >
+    <app-footer></app-footer>
+</div>
